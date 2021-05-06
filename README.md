@@ -1,2 +1,2 @@
-# Counting-Beautiful-Strings
+# Counting Beautiful Strings
 COMP 305 Final Project

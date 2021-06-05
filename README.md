@@ -38,10 +38,10 @@ COMP 305: Algorithms and Complexity Final Project
 
 ## Installing
 
-You can just run bautiful_strings.py
+You can just run beautiful_strings.py
 
 ```bash
-python bautiful_strings.py
+python beautiful_strings.py
 ```
 
 ## Results

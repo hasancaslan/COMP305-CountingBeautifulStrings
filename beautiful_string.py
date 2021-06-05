@@ -130,11 +130,19 @@ def run_tests():
 
     for case_name, case_strings in cases.items():
         beautiful_string_counts = list()
+        index = -1
         start = time.time()
         for s in case_strings:
             al = list()
-            beautiful_string_counts.append(
-                calculate_beautiful_string_count(s))
+
+            count = calculate_beautiful_string_count(s)
+            if index >= 0:
+                count = calculate_beautiful_string_count(
+                    s) - beautiful_string_counts[index]
+
+            print(index)
+            beautiful_string_counts.append(count)
+            index += 1
 
         print("Case:", case_name)
         print_list(beautiful_string_counts)

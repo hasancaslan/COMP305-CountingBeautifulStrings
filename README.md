@@ -38,7 +38,7 @@ COMP 305: Algorithms and Complexity Final Project
 
 ## Installing
 
-You can just run beautiful_strings.py. Program starts with test cases. You can modify files in the [test directory](test).
+You can just run beautiful_strings.py. Program starts with test cases. In order to change inputs, you can modify files in the [test directory](test).
 
 ```bash
 python beautiful_strings.py

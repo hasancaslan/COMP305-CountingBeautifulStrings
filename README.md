@@ -44,13 +44,15 @@ You can just run beautiful_strings.py. Program starts with test cases. In order 
 python beautiful_strings.py
 ```
 
-## Our Solution
-- [ ] TODO
+## Our Approach
+Divide problem into 2 phases:
+- Find substrings (Divide & Conquer)
+- For each substring check beautifulness (KMP)
 
 ## Results
 - [ ] TODO
 
 ### Complexity Analysis
-- [ ] TODO
-
+- Find substrings: O(2^n)
+- For each substring check beautifulness: O(n)
 

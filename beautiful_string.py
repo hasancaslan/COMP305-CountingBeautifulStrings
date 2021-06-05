@@ -1,7 +1,6 @@
 def computeLPS(string, M, lps):
     length = 0
     i = 1
-
     lps[0] = 0
 
     while i < M:
@@ -24,12 +23,11 @@ def isBeautiful(string):
 
     computeLPS(string, n, lps)
 
-    length = lps[n-1]
-
+    length = lps[n - 1]
     if length > 0 and n / length == 2:
         return True
     else:
-        False
+        return False
 
 
 # Find subsequences of a string.

@@ -4,7 +4,7 @@ COMP 305: Algorithms and Complexity Final Project
 ## Team Members
 - Hasan Can Aslan
 - Arda Bakır
-- Atilla
+- Atilla Özbek
 - Erdem Özkur
 
 **TA:** Amir Mohamad Akhlaghi Gharelar

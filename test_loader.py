@@ -24,6 +24,7 @@ def read_test_case(file_path):
     for i in range(number):
         case.append(file.readline().strip())
 
+    file.close()
     return case
 
 
@@ -50,12 +51,14 @@ def load_test_cases(dir, file_name):
 
     path = os.path.join(dir, file_name)
 
-    test_cases_file_names = open(path, "r")
+    test_cases_files = open(path, "r")
     test_cases = dict()
 
-    for file_name in test_cases_file_names.readlines():
+    for file_name in test_cases_files.readlines():
         case_name = file_name.strip().split(".")[0]
         file_path = os.path.join(dir, file_name.strip())
         test_cases[case_name] = read_test_case(file_path)
+
+    test_cases_files.close()
 
     return test_cases

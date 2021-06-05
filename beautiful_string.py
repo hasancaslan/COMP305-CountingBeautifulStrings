@@ -1,4 +1,5 @@
 from test_loader import load_test_cases
+import time
 al = list()
 
 
@@ -125,9 +126,11 @@ def print_list(lst):
 
 def run_tests():
     cases = load_test_cases("./test", "test_cases.txt")
+    f = open("./outputs/results.txt", "w")
 
     for case_name, case_strings in cases.items():
         beautiful_string_counts = list()
+        start = time.time()
         for s in case_strings:
             al = list()
             beautiful_string_counts.append(
@@ -135,7 +138,16 @@ def run_tests():
 
         print("Case:", case_name)
         print_list(beautiful_string_counts)
+        elapsed_time = time.time() - start
+        print("\nTook: ", elapsed_time, " seconds")
+        print("--------------------------------------------------------\n")
+
+        f.write(f"Case: {case_name}\n")
+        [f.write(f"{item}\n") for item in beautiful_string_counts]
+        f.write(f"\nTook: {elapsed_time} seconds.\n")
+        f.write("--------------------------------------------------------\n\n")
 
 
 if __name__ == "__main__":
+    global_counter = 0
     run_tests()

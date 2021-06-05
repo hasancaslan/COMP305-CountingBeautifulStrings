@@ -4,7 +4,7 @@ COMP 305: Algorithms and Complexity Final Project
 ## Team Members
 - Hasan Can Aslan
 - Arda Bakır
-- Atilla
+- Atilla Özbek
 - Erdem Özkur
 
 **TA:** Amir Mohamad Akhlaghi Gharelar
@@ -28,7 +28,7 @@ COMP 305: Algorithms and Complexity Final Project
 | May 20, 2021 | Brainstorming |
 | May 21, 2021 | Exploring different approaches |
 | May 25, 2021 | Discussing our exploration results |
-| May 26, 2021 | Try to implement different ideas |
+| May 26, 2021 | Try to implement results |
 | June 3, 2021 | Finalize implementation |
 | June 4, 2021 | Presentation preparation |
 | June 5, 2021 | Final presentation |
@@ -38,18 +38,19 @@ COMP 305: Algorithms and Complexity Final Project
 
 ## Installing
 
-You can just run beautiful_strings.py
+You can just run beautiful_strings.py. Program starts with test cases. In order to change inputs, you can modify files in the [test directory](test).
 
 ```bash
 python beautiful_strings.py
 ```
 
+## Our Solution
+- [ ] TODO
+
 ## Results
-
-
-### Our Solution
-
+- [ ] TODO
 
 ### Complexity Analysis
+- [ ] TODO
 
 

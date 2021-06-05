@@ -1,4 +1,5 @@
-import os
+from test_loader import load_test_cases
+al = list()
 
 
 def compute_LPS(string, M, lps):
@@ -92,66 +93,6 @@ def find_subsequences(string, answer):
     find_subsequences(string[1:], answer)
 
 
-def read_test_case(file_path):
-    """
-    reads one test case from file.
-    returns contents of test case
-
-    Parameters
-    ----------
-    file_path : str
-        the path of the test case file to read.
-
-    Returns
-    -------
-    list
-        a list of contents of the test case.
-    """
-
-    file = open(file_path, "r")
-    number = int(file.readline().strip())
-
-    case = list()
-    for i in range(number):
-        case.append(file.readline().strip())
-
-    return case
-
-
-def load_test_cases(dir, file_name):
-    """
-    loads one test case from file.
-    returns a map contents of all test cases.
-
-    Parameters
-    ----------
-    dir : str
-        directory of the files to load.
-
-    file_name : str
-        the name of the file that contains all
-        test case files name to read.
-
-
-    Returns
-    -------
-    dict
-        a dict of contents of all test cases.
-    """
-
-    path = os.path.join(dir, file_name)
-
-    test_cases_file_names = open(path, "r")
-    test_cases = dict()
-
-    for file_name in test_cases_file_names.readlines():
-        case_name = file_name.strip().split(".")[0]
-        file_path = os.path.join(dir, file_name.strip())
-        test_cases[case_name] = read_test_case(file_path)
-
-    return test_cases
-
-
 def calculate_beautiful_string_count(string):
     """
     calcules beautiful substrings count for given string.
@@ -182,13 +123,19 @@ def print_list(lst):
     [print(item) for item in lst]
 
 
-cases = load_test_cases("./test", "test_cases.txt")
+def run_tests():
+    cases = load_test_cases("./test", "test_cases.txt")
 
-for case_name, case_strings in cases.items():
-    beautiful_string_counts = list()
-    for s in case_strings:
-        al = list()
-        beautiful_string_counts.append(calculate_beautiful_string_count(s))
+    for case_name, case_strings in cases.items():
+        beautiful_string_counts = list()
+        for s in case_strings:
+            al = list()
+            beautiful_string_counts.append(
+                calculate_beautiful_string_count(s))
 
-    print("Case:", case_name)
-    print_list(beautiful_string_counts)
+        print("Case:", case_name)
+        print_list(beautiful_string_counts)
+
+
+if __name__ == "__main__":
+    run_tests()

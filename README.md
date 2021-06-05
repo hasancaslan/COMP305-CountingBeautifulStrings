@@ -12,7 +12,14 @@ COMP 305: Algorithms and Complexity Final Project
 # Planning
 
 ## Tasks
-
+- [x] Dynamic Programming Approach Exploration (Arda - Attila)
+- [x] Linear Programming Approach Exploration (Hasan)
+- [x] Knuth Morris Pratt Pattern Searching Algorithm Exploration (Hasan – Arda) 
+- [x] Test Cases (Erdem - Attila)
+- [x] Demo Implementation (Erdem - Attila)
+- [x] Repo Updates (Hasan)
+- [x] Proof and Correctness (Erdem)
+- [x] Presentation
 
 ### Meeting Schedule
 | Date | Subject |

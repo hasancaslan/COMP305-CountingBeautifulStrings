@@ -44,10 +44,11 @@ You can just run beautiful_strings.py
 python beautiful_strings.py
 ```
 
+## Our Solution
+
+
 ## Results
 
-
-### Our Solution
 
 
 ### Complexity Analysis

@@ -9,10 +9,12 @@ COMP 305: Algorithms and Complexity Final Project
 
 **TA:** Amir Mohamad Akhlaghi Gharelar
 
+# Planning
+
 ## Tasks
 
 
-# Meeting Schedule
+### Meeting Schedule
 | #  | Date  | Details |
 | -- | ----  | ----------  |
 | 1  |  May 16, 2021 | Planning |
@@ -24,6 +26,8 @@ COMP 305: Algorithms and Complexity Final Project
 | 7  |  June 4, 2021 | Presentation preparation |
 | 8  |  June 5, 2021 | Final Presentation to TA |
 
+
+# Project
 
 ## Installing
 
@@ -37,6 +41,7 @@ python bautiful_strings.py
 
 
 ### Our Solution
+
 
 ### Complexity Analysis
 

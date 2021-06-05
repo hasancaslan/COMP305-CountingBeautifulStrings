@@ -28,7 +28,7 @@ COMP 305: Algorithms and Complexity Final Project
 | May 20, 2021 | Brainstorming |
 | May 21, 2021 | Exploring different approaches |
 | May 25, 2021 | Discussing our exploration results |
-| May 26, 2021 | Try to implement different ideas |
+| May 26, 2021 | Try to implement results |
 | June 3, 2021 | Finalize implementation |
 | June 4, 2021 | Presentation preparation |
 | June 5, 2021 | Final presentation |
